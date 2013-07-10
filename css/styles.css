@@ -109,7 +109,7 @@ margin-bottom: 50px;
 /*Animal*/
 
 .animal{
-    margin: 0px 0px 0px 200px;
+    margin: 0px 40px 0px 200px;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     padding-left: 20px;
@@ -117,7 +117,7 @@ margin-bottom: 50px;
     background: url("../img/animalstext.jpg");
     background-size: 100%;
     opacity: .5;
-    transition: all 500ms linear;
+    transition: all 500ms ease-in;
 }
 .animal h3{
     font-size: 30px;
