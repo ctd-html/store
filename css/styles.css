@@ -106,11 +106,50 @@ h2 {
     margin: 0 10%;
 }
 
+/* CONTENT  */
+
+.content {
+    width: 840px;
+    margin: 0 auto;
+}
+
 /* Animals */
 .animal h3 {
     margin: 10px 0;
 }
 
-.animal img {
+.animal {
+    position: relative;
+    padding: 20px;
+    padding-left: 120px;
+}
 
+.animal:before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: url(../img/animals.png) -805px -20px;
+}
+
+.bear:before {
+    background-position: -970px -200px;
+}
+
+.pig:before {
+    background-position: -330px -20px;
+}
+
+.bee:before {
+    background-position: -805px -200px;
+}
+
+.dog:before {
+    background-position: -970px -20px;
+}
+
+.bull:before {
+    background-position: -1120px -20px;
 }
