@@ -46,10 +46,12 @@ float: right;
 h1{
     text-align: center;
     margin:35px 15px;
+    font-size:50px;
+    padding-top: 15px;
 }
 
 /*Top Three Photos*/
-.side , .main {
+.side, .main {
     display: inline-block;
 }
 .main{
@@ -64,13 +66,14 @@ h1{
     margin: 30px 10px;
     border-bottom: 1px solid black;
     padding-bottom: 30px;
-}
-
-.animal1 h3 , .animal1 p {
-    padding-left: 100px;
+    padding-top: 20px;
 }
 
 /*Animals*/
+.animal1 h3, .animal1 p {
+    padding-left: 100px;
+}
+
 .animal1:before {
     content: "";
     background-color: pink;
