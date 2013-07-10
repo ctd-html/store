@@ -1,0 +1,43 @@
+/*General*/
+body{ margin: 0;}
+/*Navigation*/
+.navbar{
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    position: fixed;
+    top: 0;
+    text-align: center;
+}
+.nav li, .social li{
+    display: inline;
+}
+
+.nav li a, .social li a{
+    text-decoration: none;
+    color: darkgray;
+    font-size: 25px;
+    padding-right: 50px;
+}
+.social{
+    float: right;
+}
+.nav{
+    float: left;
+}
+
+/*Header*/
+header{
+    clear: both;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*Features*/
+.features div{
+    display: inline;
+}
+.side{
+    margin: 0px 50px;
+}
