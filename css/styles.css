@@ -8,9 +8,11 @@ body{ margin: 0;}
     position: fixed;
     top: 0;
     text-align: center;
+    background-color: white;
 }
 .nav li, .social li{
     display: inline;
+    list-style-type: none;
 }
 
 .nav li a, .social li a{
@@ -26,6 +28,24 @@ body{ margin: 0;}
     float: left;
 }
 
+.twitter a, .facebook a {
+    display: inline-block;
+    background: pink;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+.twitter a {
+    background: url(../img/twitter.png) no-repeat 0 0;
+}
+
+.facebook a {
+    background: url(../img/facebook.png) no-repeat 0 0;
+}
+
 /*Header*/
 header{
     clear: both;
@@ -38,7 +58,60 @@ header{
 .features div{
     display: inline;
 }
+.side img{
+margin-bottom: 50px;
+}
+
+.main{
+    margin: 0px 20px;
+}
 .features{
-    width: 909px;
+    width: 949px;
     margin: 0px auto;
+}
+
+/*About*/
+.about{
+    text-align: center;
+    padding: 80px 40px 20px;
+    border-bottom: 4px solid black;
+}
+
+.about h2{
+    font-size: 40px;
+}
+
+.about p, .about button{
+    font-size: 25px;
+}
+
+/*Animal*/
+
+.animal{
+    margin: 0px 0px 0px 40px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    padding-left: 20px
+}
+.animal h3{
+    font-size: 30px;
+}
+.animal p{
+    font-size: 25px;
+    text-indent: 20px
+}
+
+/*Convinced*/
+.convinced, .convinced button{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.copyright{
+    float: left;
+    margin-top: 1.5em;
+    padding-left: 10px;
+}
+footer{
+    border-top: 2px solid black;
 }
