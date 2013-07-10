@@ -1,0 +1,21 @@
+.nav{
+    display: inline-block;
+    list-style-position: none;
+    position: absolute;
+
+}
+
+.social-top {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+
+.container {
+    margin-top: 80px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: 0;
+}
