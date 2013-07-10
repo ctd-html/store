@@ -9,6 +9,7 @@ body{ margin: 0;}
     top: 0;
     text-align: center;
     background-color: white;
+    z-index: 10;
 }
 .nav li, .social li{
     display: inline;
@@ -23,6 +24,7 @@ body{ margin: 0;}
 }
 .social{
     float: right;
+    margin-top:7px;
 }
 .nav{
     float: left;
@@ -58,6 +60,9 @@ header{
 .features div{
     display: inline;
 }
+.features img{
+    border: 6px solid gold;
+}
 .side img{
 margin-bottom: 50px;
 }
@@ -66,17 +71,23 @@ margin-bottom: 50px;
     margin: 0px 20px;
 }
 .features{
-    width: 949px;
+    width: 1065px;
     margin: 0px auto;
 }
 
 /*About*/
 .about{
     text-align: center;
-    padding: 80px 40px 20px;
+    margin-top: 70px;
     border-bottom: 4px solid black;
+    border-top: 2px solid black;
+    background: url("../img/abouttext.jpg");
 }
-
+.about div{
+     padding: 20px 40px 20px;
+     max-width: 1000px;
+     margin: 0 auto;
+}
 .about h2{
     font-size: 40px;
 }
@@ -85,13 +96,25 @@ margin-bottom: 50px;
     font-size: 25px;
 }
 
+.about button {
+    transition: all 500ms linear;
+    height: 34px;
+}
+.about button:hover {
+    background: lime no-repeat;
+}
+
 /*Animal*/
 
 .animal{
-    margin: 0px 0px 0px 40px;
+    margin: 0px 0px 0px 200px;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
-    padding-left: 20px
+    padding-left: 20px;
+    padding-right: 20px;
+    background: url("../img/animalstext.jpg");
+    background-size: 100%;
+    transition: background 500ms linear;
 }
 .animal h3{
     font-size: 30px;
@@ -101,6 +124,73 @@ margin-bottom: 50px;
     text-indent: 20px
 }
 
+.animal:hover {
+    background:#BADA55;
+    background-size: 100%;
+}
+.animal{
+    position: relative;
+}
+.dolphin:before{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 0;
+    left: -170px;
+    background: url("../img/animals.png");
+    background-position: -760px 0px;
+    content: "";
+}
+.bear:before{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 0;
+    left: -170px;
+    background: url("../img/animals.png");
+    background-position: -930px -170px;
+    content: "";
+}
+.pig:before{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 0;
+    left: -170px;
+    background: url("../img/animals.png");
+    background-position: -300px 0px;
+    content: "";
+}
+.bee:before{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 0;
+    left: -170px;
+    background: url("../img/animals.png");
+    background-position: -760px -160px;
+    content: "";
+}
+.dog:before{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 0;
+    left: -170px;
+    background: url("../img/animals.png");
+    background-position: -920px 0px;
+    content: "";
+}
+.bull:before{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 0;
+    left: -170px;
+    background: url("../img/animals.png");
+    background-position: -1060px 0px;
+    content: "";
+}
 /*Convinced*/
 .convinced, .convinced button{
     font-size: 40px;
