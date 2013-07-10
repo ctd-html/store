@@ -89,6 +89,9 @@ h1 {
 .bear:before {
 	background: url("../img/animals.png") no-repeat -970px -200px;
 }
+.bear:hover {
+	background-color: lightgreen
+}
 .pigs:before {
 	background: url("../img/animals.png") no-repeat -330px -30px;
 }
@@ -100,5 +103,11 @@ h1 {
 }
 .bulls:before {
 	background: url("../img/animals.png") no-repeat -1120px -30px;
+}
+
+@media screen and (max-width: 800px){
+	body {
+		background-image: url(../img/dolphin.jpeg) 0 0;
+	}
 }
 
