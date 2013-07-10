@@ -45,9 +45,14 @@ body {
 
 .container {
     text-align: center;
+    width: 960px;
 }
 
 /* FEATURES */
+
+.features div {
+    display: inline-block;
+}
 
 
 
