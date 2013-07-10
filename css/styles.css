@@ -9,6 +9,10 @@ body {
     font-family: Helvetica;
 }
 
+section {
+    padding: 10px;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -36,11 +40,11 @@ body {
 
 .navbar .social li {
     display: inline-block;
-    background: pink;
     width: 48px;
     height: 48px;
     margin: 8px 10px;
-    text-indent: -20px;
+    text-indent: -9999em;
+    overflow: hidden;
 }
 
 .navbar li.twitter {
@@ -64,15 +68,49 @@ body {
 /* FULL PAGE */
 
 .container {
-    text-align: center;
+    margin: 0 auto;
     width: 960px;
 }
 
-/* FEATURES */
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Features */
+
+.features {
+    text-align: center;
+}
+
+.features .side {
+    position: relative;
+    bottom: 50px;
+}
 
 .features div {
     display: inline-block;
+    padding: 5px;
 }
 
+/* About */
 
+h2 {
+    text-align: center;
+    padding: 10px;
+}
 
+.about p {
+    text-align: center;
+    width: 80%;
+    margin: 0 10%;
+}
+
+/* Animals */
+.animal h3 {
+    margin: 10px 0;
+}
+
+.animal img {
+
+}
