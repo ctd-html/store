@@ -1,0 +1,53 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica;
+}
+
+/* NAVBAR */
+
+.navbar {
+    border-bottom: 1px solid black;
+    height: 40px;
+}
+
+.navbar .nav {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar .social {
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navbar li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* FULL PAGE */
+
+.container {
+    text-align: center;
+}
+
+/* FEATURES */
+
+
+
