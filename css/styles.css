@@ -1,3 +1,4 @@
+/*GENERAL*/
 body {
 	margin: 0px;
 	padding:0px;
@@ -5,42 +6,99 @@ body {
 a {
 	text-decoration: none
 }
+/*NAVBAR*/
 ul, li {
 	display: inline-block;
+}
+ul {
+	list-style: none;
 }
 .navbar {
 	width: 100%;
 	background-color: white;
 	position: fixed;
-	margin-top: -50px;
-	border-bottom: 2px solid black
-
-}
-.nav {
-
+	top: 0;
+	left: 0;
+	z-index: 5;
+	border-bottom: 1px solid black;
+	font-size: 20px;
 }
 .social {
+	float: right;
+}
+.facebook a, .twitter a {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	padding: 0px;
+	background-color: blue;
+	text-indent: -9999em;
+	overflow: hidden;
+}
+
+.facebook a{
+	background: url(../img/facebook.png) no-repeat 0 0;
 
 }
-ul {
-	list-style: none;
+.twitter a{
+	background: url(../img/twitter.png) no-repeat 0 0;
 }
-ul li {
-	display: inline;
+
+/*HEADER AND IMAGES*/
+h1 {
+	font-size: 48px;
+	padding-top:60px;
 }
 .container {
 	margin-top: 50px;
 	text-align: center;
 }
-
 .side {
-	width: 150px;
 	display: inline-block;
-	float: left;
-	margin: 0 auto;
+	vertical-align: middle;
 }
 .main {
 	display: inline-block;
-	float: left;
-	margin: 0 20px;
+	margin:40px 20px;
+	vertical-align: middle;
 }
+.main img {
+	height: 390px
+}
+.about {
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
+}
+/*MAIN TEXT*/
+.animal {
+	margin-top: 20px;
+	text-align: left;
+	position: relative;
+	padding-left: 130px;
+}
+.animal:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	background: url("../img/animals.png") no-repeat -810px -30px;
+}
+.bear:before {
+	background: url("../img/animals.png") no-repeat -970px -200px;
+}
+.pigs:before {
+	background: url("../img/animals.png") no-repeat -330px -30px;
+}
+.bees:before {
+	background: url("../img/animals.png") no-repeat -805px -200px;
+}
+.dogs:before {
+	background: url("../img/animals.png") no-repeat -963px -30px;
+}
+.bulls:before {
+	background: url("../img/animals.png") no-repeat -1120px -30px;
+}
+
