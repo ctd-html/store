@@ -1,12 +1,16 @@
-*{
+/*General*/
+* {
     margin: 0;
     padding: 0;
     z-index: 0;
 }
-body{
+
+body {
     min-width: 836px;
     -webkit-transition: all 1s ease-in;
 }
+
+/*Nav Bar*/
 .navbar {
 background-color: white;
 height: 25px;
@@ -18,8 +22,8 @@ left: 0;
 z-index: 1;
 width: 100%
 }
-.navbar .nav
-{
+
+.navbar .nav {
     float: left;
 }
 
@@ -31,11 +35,20 @@ float: right;
     text-align: center;
     min-width:930px;
 }
+
 .navbar li
 {
     display: inline;
     padding: 15px;
 }
+
+/*Title*/
+h1{
+    text-align: center;
+    margin:35px 15px;
+}
+
+/*Top Three Photos*/
 .side , .main {
     display: inline-block;
 }
@@ -43,20 +56,21 @@ float: right;
     position: relative;
     top:25px;
 }
-h1
-{
-    text-align: center;
-    margin:35px 15px;
-}
+
+
+/*About*/
 .about {
     text-align: center;
     margin: 30px 10px;
     border-bottom: 1px solid black;
     padding-bottom: 30px;
 }
+
 .animal1 h3 , .animal1 p {
     padding-left: 100px;
 }
+
+/*Animals*/
 .animal1:before {
     content: "";
     background-color: pink;
@@ -69,15 +83,19 @@ h1
     background: url("../img/animals.png");
     background-size:1300%;
 }
+
 .dolphins:before {
         background-position:-516px -17px;
 }
+
 .pigs:before {
     background-position:-215px -17px;
 }
-.dogs:before{
+
+.dogs:before {
        background-position:-13px -17px;
 }
+
 .animal1 figure img {
     float:right;
     border-radius: 5px;
@@ -85,6 +103,7 @@ h1
     height:100px;
     box-shadow:none;
     }
+
 .animal1 img {
     box-shadow: 0 2px 8px black;
     border: 1px solid black;
@@ -93,13 +112,15 @@ h1
     float: left;
     margin:7px 6px 25px 6px;
 }
-.animal1{
+
+.animal1 {
 margin-bottom: 20px;
 padding-bottom: 25px;
 border-bottom: 1px solid black;
 height: 100px;
 position:relative;
 }
+
 .animal1 h3 {
     margin-bottom: 10px
 }
@@ -112,15 +133,15 @@ position:relative;
     float:left;
 }
 
-.animal2 h3 , .animal2 p {
+.animal2 h3, .animal2 p {
     text-align: right;
 }
 
 .allanimals {
     max-width: 800px;
 }
+
+/*Responsive Design*/
 @media screen and (min-width: 1100px) {
-    body {
-        background: url(http://sherly.mobile9.com/download/media/295/cartoonpoo_7j2hq3h7.jpg);
-    }
+
 }
