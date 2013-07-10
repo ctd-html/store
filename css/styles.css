@@ -38,6 +38,7 @@ header{
 .features div{
     display: inline;
 }
-.side{
-    margin: 0px 50px;
+.features{
+    width: 909px;
+    margin: 0px auto;
 }
