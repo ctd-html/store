@@ -1,21 +1,61 @@
-.nav{
+ul li {
     display: inline-block;
-    list-style-position: none;
-    position: absolute;
+}
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    background-color: #fff;
+
+}
+
+li {
+    padding: 5px;
+}
+.nav-top {
+    text-decoration: none;
+    padding-left: 18px;
+    position: absolute;
+    list-style-type: none;
+    top: 0;
+    left: 0;
 }
 
 .social-top {
-    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
     position: absolute;
-    right: 0;
     top: 0;
-    margin: 0;
+    right: 5%;
+}
+
+.twitter a .facebook a {
+    background-color: red;
 }
 
 .container {
-    margin-top: 80px;
+    width: 960px;
+    margin-top: 70px;
     text-align: center;
     margin-right: auto;
     margin-left: 0;
+}
+.features div {
+    display: inline-block;
+    text-align: center;
+}
+.side {
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+
+}
+.main{
+    position: relative;
+}
+.about {
+    border-bottom: 2px solid black ;
 }
