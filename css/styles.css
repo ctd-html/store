@@ -33,8 +33,14 @@
     display:inline-block;
 }
 
+.social ul {
+    list-style-type: none;
+}
+
 /*CONTAINER*/
 
 .container{
     margin-top: 50px;
 }
+
+
