@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+background-color: gray;
+height: 25px;
+}
+.navbar .nav
+{
+    float: left;
+}
+
+.navbar .social {
+ float: right;
+}
+
+.features {
+    text-align: center;
+    min-width:930px;
+}
+.navbar li
+{
+    display: inline;
+    padding: 15px;
+}
+.side , .main {
+    display: inline-block;
+}
+.main{
+    position: relative;
+    top:25px;
+}
+h1
+{
+    text-align: center;
+    margin:35px 15px;
+}
+.about {
+    text-align: center;
+    margin: 30px 10px;
+}
