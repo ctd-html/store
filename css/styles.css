@@ -13,7 +13,7 @@ body {
 
 .navbar {
     border-bottom: 1px solid black;
-    height: 40px;
+    height: 64px;
 }
 
 .navbar .nav {
@@ -23,6 +23,10 @@ body {
     left: 0;
 }
 
+.navbar .nav li{
+    padding: 24px 10px;
+}
+
 .navbar .social {
     display: inline;
     position: absolute;
@@ -30,10 +34,26 @@ body {
     right: 0;
 }
 
-.navbar li {
-    list-style-type: none;
+.navbar .social li {
     display: inline-block;
-    padding: 10px;
+    background: pink;
+    width: 48px;
+    height: 48px;
+    margin: 8px 10px;
+    text-indent: -20px;
+}
+
+.navbar li.twitter {
+    background-image: url(../img/twitter.png);
+}
+
+.navbar li.facebook {
+    background-image: url(../img/facebook.png);
+}
+
+.navbar li {
+    display: inline-block;
+    list-style-type: none;
 }
 
 .navbar li a {
