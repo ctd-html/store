@@ -21,11 +21,32 @@ body{
     display: inline;
     padding: 0 20px;
 }
+
+
 .social{
-    display: inline-block;
     list-style-type: none;
     float: right;
 }
+
+.twitter a, .facebook a {
+    display: inline-block;
+    background: pink;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+.twitter a {
+    background: url(../img/twitter.png) no-repeat 0 0;
+}
+
+.facebook a {
+    background: url(../img/facebook.png) no-repeat 0 0;
+}
+
+
 .container{
     text-align: center;
     margin-top: 75px;
