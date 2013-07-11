@@ -21,11 +21,21 @@ button {
     border: none;
     color: white;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+button:active {
+    background: navy;
 }
 
 a {
     text-decoration: none;
     color: black;
+    -webkit-transition: all .5s;
+}
+
+a:hover {
+    color:#536EC9;
 }
 
 img{
@@ -42,7 +52,7 @@ img{
     top: 0;
     left: 0;
     width: 100%;
-    background: whitesmoke;
+    background: linear-gradient(white,#DADDE8);
     z-index: 10;
 }
 
@@ -96,6 +106,7 @@ img{
 }
 
 h1 {
+    font-size: 48px;
     text-align: center;
     padding: 20px;
     margin-top: 75px;
@@ -122,6 +133,7 @@ h1 {
 h2 {
     text-align: center;
     padding: 10px;
+    color: navy;
 }
 
 .about p {
@@ -140,6 +152,7 @@ h2 {
 /* Animals */
 .animal h3 , .rightanimal h3 {
     margin: 15px 0;
+        color: navy;
 }
 
 .animal , .rightanimal {
@@ -210,11 +223,19 @@ figure img {
 
 /* FOOTER */
 footer {
-    background: whitesmoke;
+    background: linear-gradient(#383838,#171717);
     padding: 10px;
     margin-top: 20px;
+    color: white;
 }
 
+footer a {
+    color: lightgrey;
+}
+
+footer a:hover {
+    color:white;
+}
 footer ul li {
     display:inline;
     padding-left: 5px;
@@ -239,7 +260,6 @@ footer .nav {
     .side img {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 540px) {
@@ -260,5 +280,10 @@ footer .nav {
     .navbar .social li a {
         width: 24px;
         height: 24px;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding-bottom: 0;
     }
 }
