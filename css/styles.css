@@ -1,4 +1,5 @@
 /*General*/
+
 * {
     margin: 0;
     padding: 0;
@@ -6,56 +7,69 @@
 }
 
 body {
-    min-width: 836px;
-    -webkit-transition: all 1s ease-in;
+    line-height: 1.5em;
 }
 
-/*Nav Bar*/
+p {
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 12px;
+}
+
+/*Nav Bar and Bottom Footer*/
+
 .navbar {
-background-color: white;
-min-width:500px;
-border-bottom:1px solid black;
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1;
-width: 100%
+    background-color: white;
+    border-bottom:1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
 }
 
-.navbar .nav {
+.navbar .nav, footer .nav {
     position: relative;
-    top: 10px;
+    top: 15px;
     float: left;
 }
 
-.navbar .social {
-float: right;
+.navbar .nav li a, footer .nav li a {
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
 }
 
-.features {
-    text-align: center;
-    min-width:930px;
+.navbar .nav li a:hover, footer .nav li a:hover {
+    color: green;
 }
 
-.navbar li
-{
+
+.navbar li, footer li {
     display: inline;
     padding: 15px;
 }
 
+/*Nav Bar Social*/
 
-.nav li, .social li{
+.navbar .social, footer .social {
+float: right;
+}
+
+.nav li, .social li, footer .nav li, footer .social li {
     display: inline;
     padding: 0 20px;
 }
 
-.social{
+.social, footer .social {
     list-style-type: none;
     float: right;
     margin: 0;
 }
 
-.twitter a, .facebook a {
+.twitter a, .facebook a, footer .twitter a, footer .facebook a {
     display: inline-block;
     width: 48px;
     height: 48px;
@@ -64,27 +78,37 @@ float: right;
     overflow: hidden;
 }
 
-.twitter a {
+.twitter a, footer .twitter a {
     background: url(../img/twitter.png) no-repeat 0 0;
 }
 
-.facebook a {
+.facebook a, footer .facebook a{
     background: url(../img/facebook.png) no-repeat 0 0;
 }
 
 /*Title*/
+
 h1{
     text-align: center;
     margin:35px 15px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: 'Stalinist One', cursive;
     font-size:50px;
     padding-top: 30px;
+    line-height: normal;
 }
 
 /*Top Three Photos*/
+
+.features {
+    text-align: center;
+    width:930px;
+    margin: 0 auto;
+}
+
 .side, .main {
     display: inline-block;
 }
+
 .main{
     position: relative;
     top:25px;
@@ -92,18 +116,36 @@ h1{
 
 
 /*About*/
+
 .about {
     text-align: center;
     margin: 30px 10px;
     border-bottom: 1px solid black;
-    padding-bottom: 30px;
-    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-top: 60px;
     max-width: 960px;
     margin: 0 auto;
 }
 
+.about p {
+    font-size: 20px;
+}
+
+.about h2 {
+    padding-bottom: 20px;
+}
+
 /*Animals*/
+
+.allanimals section {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 .animal1, .animal2{
+    transition: all .3s ease-in;
     opacity: 0.5;
 }
 
@@ -176,7 +218,7 @@ h1{
     width:140px;
     height:100px;
     box-shadow:none;
-    }
+}
 
 .animal1 img, .animal2 img {
     box-shadow: 0 2px 8px black;
@@ -188,15 +230,14 @@ h1{
 }
 
 .animal1, .animal2 {
-margin-bottom: 20px;
-padding-bottom: 25px;
-border-bottom: 1px solid black;
-height: 100px;
-position:relative;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    position:relative;
 }
 
-.animal1 h3, .animal2 h3 {
-    margin-bottom: 10px
+h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
 }
 
 .animal2 img {
@@ -217,7 +258,66 @@ position:relative;
     margin: 0 auto;
 }
 
-/*Responsive Design*/
-@media screen and (min-width: 1100px) {
+/*Convinced?*/
 
+.convinced {
+    text-align: center;
+    font-size: 24px;
+}
+
+button {
+    margin-top: 10px;
+    height: 30px;
+    width: 140px;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: lightblue;
+    border-color: lightblue;
+}
+
+/* Footer */
+
+/*Responsive Design*/
+@media screen and (max-width: 950px) {
+    .side {
+        display: none;
+    }
+    .main {
+        width: 600px;
+    }
+    .main img {
+        width: 600px;
+    }
+    .features {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        width: 400px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .main img {
+        width: 400px;
+    }
+    .features {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main {
+        width: 300px;
+    }
+    .main img {
+        width: 300px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .social li {
+        padding: 0;
+    }
 }
