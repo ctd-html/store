@@ -282,15 +282,19 @@ button {
     .side {
         display: none;
     }
+
     .main {
         width: 600px;
     }
+
     .main img {
         width: 600px;
     }
+
     .features {
         width: auto;
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -299,25 +303,34 @@ button {
         text-align: center;
         margin: 0 auto;
     }
+
     .main img {
         width: 400px;
     }
+
     .features {
         text-align: center;
     }
+
 }
 
 @media screen and (max-width: 400px) {
     .main {
         width: 300px;
+        height: 350px;
     }
+
     .main img {
+        height: 350px;
         width: 300px;
     }
+
     h1 {
         font-size: 36px;
     }
+
     .social li {
         padding: 0;
     }
+
 }
