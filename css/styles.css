@@ -13,7 +13,6 @@ body {
 /*Nav Bar*/
 .navbar {
 background-color: white;
-height: 25px;
 min-width:500px;
 border-bottom:1px solid black;
 position: fixed;
@@ -24,6 +23,8 @@ width: 100%
 }
 
 .navbar .nav {
+    position: relative;
+    top: 10px;
     float: left;
 }
 
@@ -42,12 +43,42 @@ float: right;
     padding: 15px;
 }
 
+
+.nav li, .social li{
+    display: inline;
+    padding: 0 20px;
+}
+
+.social{
+    list-style-type: none;
+    float: right;
+    margin: 0;
+}
+
+.twitter a, .facebook a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+.twitter a {
+    background: url(../img/twitter.png) no-repeat 0 0;
+}
+
+.facebook a {
+    background: url(../img/facebook.png) no-repeat 0 0;
+}
+
 /*Title*/
 h1{
     text-align: center;
     margin:35px 15px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-size:50px;
-    padding-top: 15px;
+    padding-top: 30px;
 }
 
 /*Top Three Photos*/
@@ -66,10 +97,20 @@ h1{
     margin: 30px 10px;
     border-bottom: 1px solid black;
     padding-bottom: 30px;
-    padding-top: 20px;
+    padding-top: 50px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 /*Animals*/
+.animal1, .animal2{
+    opacity: 0.5;
+}
+
+.animal1:hover, .animal2:hover{
+    opacity: 1.0;
+}
+
 .animal1 h3, .animal1 p{
     padding-left: 100px;
 }
@@ -172,6 +213,8 @@ position:relative;
 
 .allanimals {
     max-width: 800px;
+    padding-top: 30px;
+    margin: 0 auto;
 }
 
 /*Responsive Design*/
