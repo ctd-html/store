@@ -323,6 +323,10 @@ button {
         font-size: 36px;
     }
 
+    footer .social li {
+        padding: 0;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
