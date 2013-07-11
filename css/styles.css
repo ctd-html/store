@@ -39,6 +39,9 @@ a {
 
 a:hover {
     color:#536EC9;
+}
+
+.navbar .nav li a:hover {
     box-shadow: 0 0 8px white;
 }
 
