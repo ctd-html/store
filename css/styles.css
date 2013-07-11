@@ -132,13 +132,23 @@ header {
     color: rgb(100,100,100);
 }
 
-.about button {
-    transition: all 500ms linear;
-    height: 34px;
+.about button{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    transition: all 200ms linear;
+    border: 0px solid black;
+    border-radius: 10px
 }
 
 .about button:hover {
-    background: lime no-repeat;
+    background: yellow no-repeat;
+    border: 10px solid red;
+    border-top-width: 20px;
+    border-left-width: 20px;
+    color: black;
+    box-shadow: 20px 20px 15px black;
+    font-size: 40px;
 }
 
 /*Animal*/
@@ -253,6 +263,23 @@ header {
     margin-bottom: 30px;
 }
 
+.convinced button{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    transition: all 200ms linear;
+    border: 0px solid black;
+    border-radius: 10px
+}
+
+.convinced button:hover {
+    background: yellow no-repeat;
+    border: 5px solid red;
+    border-top-width: 10px;
+    color: black;
+    box-shadow: 10px 10px 10px black;
+}
+
 .copyright {
     float: left;
     margin-top: 1.5em;
@@ -331,16 +358,27 @@ header {
 
 @media screen and (max-width: 600px) {
 
-.about {
-     padding: 0 50px 0 150px;
+    .about {
+         padding: 0 40px;
+    }
+
+    .animal_container {
+         padding: 0 40px;
+    }
+
+    header {
+        font-size: 18px;
+    }
+
+    .animal:before{
+        height: 0;
+        width: 0;
+    }
 }
 
-.animal_container {
-     padding: 0 50px 0 150px;
-}
-
-header {
-    font-size: 18px;
-}
-
+@media screen and (max-width: 485px) {
+    .nav li a, .social li a {
+        font-size: 12px;
+        padding-right: 12px;
+    }
 }
