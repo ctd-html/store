@@ -1,15 +1,16 @@
+
 ul li {
     display: inline-block;
 }
 
 .navbar {
+    border-bottom: 2px solid black;
     position: fixed;
     top: 0;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid black;
     background-color: #fff;
-
+    z-index: 10;
 }
 
 li {
@@ -24,12 +25,13 @@ li {
     left: 0;
 }
 
-.social-top {
+.social-top li {
     text-decoration: none;
     list-style-type: none;
-    position: absolute;
-    top: 0;
-    right: 5%;
+    position: fixed;
+    top:0;
+    right: 20px;
+    float:right;
 }
 
 .twitter a .facebook a {
@@ -37,25 +39,87 @@ li {
 }
 
 .container {
-    width: 960px;
+    width: 950px;
     margin-top: 70px;
     text-align: center;
     margin-right: auto;
-    margin-left: 0;
+    margin-left: auto;
 }
+
 .features div {
     display: inline-block;
     text-align: center;
 }
+
 .side {
     display: inline-block;
     position: relative;
     bottom: 50px;
-
+    margin-right: 8px;
+    margin-left: 8px;
 }
-.main{
+
+.main {
     position: relative;
 }
+
 .about {
+    margin-top: 50px;
     border-bottom: 2px solid black ;
+}
+
+.animal {
+    position: relative;
+    text-align: left;
+    padding-left: 120px;
+    margin-top: 30px;
+    border-bottom: 2px solid black ;
+}
+
+
+.animal:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left:0;
+    width: 100px;
+    height: 100px;
+    background: url("../img/animals.png") no-repeat -810px -30px ;
+}
+
+.bears:before {
+    background-position: -970px -210px;
+}
+
+.animal h3 {
+    margin: 10px 0;
+}
+
+.pigs:before {
+    background-position:  -331px -30px;
+}
+
+.bees:before {
+    background-position: -810px -209px;
+}
+
+.dogs:before {
+    background-position: -966px -30px;
+}
+
+.bulls:before {
+    background-position: -1125px -30px;
+}
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 2px solid black;
+    background-color: #fff;
+}
+.nav-bottom {
+    text-decoration: none;
+    padding-left: 18px;
+    list-style-type: none;
+
 }
