@@ -91,13 +91,26 @@ h1{
         background-position:-516px -17px;
 }
 
+.bears:before {
+    background-position:-616px -126px;
+}
+
 .pigs:before {
     background-position:-215px -17px;
 }
 
-.dogs:before {
-       background-position:-13px -17px;
+.bee:before {
+    background-position:-516px -126px;
 }
+
+.dogs:before {
+       background-position:-615px -17px;
+}
+
+.bull:before{
+    background-position:-715px -17px;
+}
+
 
 .animal1 figure img {
     float:right;
