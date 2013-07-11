@@ -314,6 +314,17 @@ button {
 
 }
 
+@media screen and (max-width: 500px) {
+    .social li {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+}
+
 @media screen and (max-width: 400px) {
     .main {
         width: 300px;
