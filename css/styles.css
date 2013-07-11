@@ -375,6 +375,11 @@ h1 {
     font-size: 40px;
     text-align: center;
     margin-bottom: 30px;
+    transition: all 500ms linear;
+}
+
+.convinced button:hover {
+    background: lime no-repeat;
 }
 
 <<<<<<< HEAD
@@ -454,13 +459,16 @@ footer .nav li a, footer .social li a {
 }
 
 @media screen and (max-width: 720px) {
-
+.animal:before{
+    width: 0;
+    height: 0;
+}
 .about {
-     padding: 0 100px 0 150px;
+     padding: 0 20px 0 20px;
 }
 
 .animal_container {
-     padding: 0 100px 0 150px;
+     padding: 0 20px 0 20px;
 }
 
 header {
@@ -488,16 +496,29 @@ header {
 
 @media screen and (max-width: 600px) {
 
-.about {
-     padding: 0 50px 0 150px;
-}
-
-.animal_container {
-     padding: 0 50px 0 150px;
-}
-
 header {
     font-size: 18px;
+}
+
+.about p, .animal p{
+    font-size: 18px;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+header {
+    font-size: 16px;
+}
+
+.about p, .animal p{
+    font-size: 16px;
+}
+
+.nav li a, .social li a {
+    font-size: 12px;
+    padding-right: 12px;
 }
 >>>>>>> 8585f0dd57b5118b5c22f241a6ed96e09c1045f2
 
