@@ -31,12 +31,15 @@ button:active {
 
 a {
     text-decoration: none;
+    padding: 3px;
     color: black;
     -webkit-transition: all .5s;
+    border-radius: 5px;
 }
 
 a:hover {
     color:#536EC9;
+    box-shadow: 0 0 8px white;
 }
 
 img{
@@ -53,7 +56,7 @@ img{
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(white,#DADDE8);
+    background: linear-gradient(#DADDE8,#93A4CC);
     z-index: 10;
 }
 
@@ -64,7 +67,7 @@ img{
     left: 20px;
 }
 
-.navbar .nav li{
+.navbar .nav li {
     padding: 24px 10px;
 }
 
@@ -239,10 +242,10 @@ footer a {
 }
 
 footer a:hover {
-    color:white;
+    color: white;
 }
 footer ul li {
-    display:inline;
+    display: inline;
     padding-left: 5px;
 }
 
@@ -273,8 +276,8 @@ footer .nav {
     }
 
     .main img {
-        width:322px;
-        height:280px;
+        width: 322px;
+        height: 280px;
         margin: 0 auto;
     }
 
